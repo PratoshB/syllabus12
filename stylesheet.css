@@ -1,0 +1,117 @@
+body {
+    background: #221c1c;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+page {
+    background: #ffffff;
+    display: block;
+    width: 90vw; 
+    max-width: 1200px; 
+    min-height: 90vh;
+    margin: 2vh auto;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+p {
+    text-align: justify;
+    font-size: 17px;
+}
+li {
+    text-align: left;
+    font-size: 17px;
+}
+.head {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    color: rgb(3, 0, 98);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 3rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.leftcolumn {
+    flex: 1;
+    min-width: 250px;
+    max-width: 20%;
+    background-color: #484444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    height: 125vh; 
+    position: sticky;
+}
+.rightcolumn {
+    flex: 2;
+    min-width: 300px;
+    max-width: 75%;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul.chapter-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.chapter-list li {
+    font-size: 20px;
+}
+ul.chapter-list a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 12px 15px; 
+    border-radius: 5px;
+    display: block; 
+    transition: background-color 0.3s ease;
+}
+ul.chapter-list a:hover {
+    background-color: #042e49;
+    color: white;
+}
+.title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #042e49;
+    margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .leftcolumn, .rightcolumn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.footer {
+    text-align: center;
+    background: #2e2727; 
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
