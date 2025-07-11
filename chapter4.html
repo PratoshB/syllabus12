@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Class 12 Computer Syllabus</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <page size="A2">     
+            <h1 class="head"> Chapter 1: Database Management System</h1>
+            <div class="container">
+                <div class="leftcolumn">
+                    <h2 class="title">Chapters</h2>
+                    <ul class="chapter-list">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="chapter1.html">Chapter 1: Computer System</a></li>
+                        <li><a href="chapter4.html">Chapter 4: Programming in C</a></li>
+                    </ul>
+                </div>
+                <div class="rightcolumn">
+
+                    <h2 class="title">Questions: </h2>
+                    <p><strong>1. Working with a function</strong></p>
+                    <ol type="a">
+                        <li><strong>Define function:</strong> 
+                            <p>A function is a block of code designed to perform a particular task. It can be reused by calling it from different parts of a program.</p>
+                        </li>
+                        <li><strong>Syntax of functions:</strong>
+                            <p>
+                            return_type function_name(parameters) {<br>
+                                // body of function<br>
+                            }</p>
+                        </li>
+                        <li><strong>Types of functions:</strong><br>
+                            <p><strong>Library functions:</strong> Built-in functions provided by C/C++ (e.g., printf(), sqrt()).<br>
+                            <strong>User-defined functions:</strong> Functions created by the programmer to perform specific tasks.</p>
+                        </li>
+                        <li><strong>Components of a function:</strong>
+                            <p>
+                                <ol type="i">
+                                    <li><strong>Function prototype:</strong> Declares the function signature before its use.</li>
+                                    <li><strong>Function call:</strong> Executes the function by calling it with arguments.</li>
+                                    <li><strong>Function definition:</strong> Contains the body of the function that defines its operations.</li>
+                                    <li><strong>Return type:</strong> Specifies the type of value the function returns.</li>
+                                </ol>
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p><strong>2. Categories of function with example</strong></p>
+                    <p>
+                        <ol type="i">
+                            <li><strong>Function with return type but no arguments:</strong><br>
+                                Example:<br>
+                                int getValue() { return 10; }</li>
+                            <li><strong>Function with return type with arguments:</strong><br>
+                                Example:<br>
+                                int sum(int a, int b) { return a + b; }</li>
+                            <li><strong>Function with no return type with no arguments:</strong><br>
+                                Example:<br>
+                                void display() { printf("Hello"); }</li>
+                            <li><strong>Function with no return type with arguments:</strong><br>
+                                Example:<br>
+                                void show(int x) { printf("%d", x); }</li>
+                        </ol>
+                    </p>
+
+                    <p><strong>3. Storage classes</strong></p>
+                    <p>
+                        <ul>
+                            <li><strong>Automatic:</strong> Default storage class for local variables. Lifetime is within the function.</li>
+                            <li><strong>External:</strong> Used for global variables accessible across multiple files using the <code>extern</code> keyword.</li>
+                            <li><strong>Register:</strong> Stores variables in CPU registers for faster access. Keyword: <code>register</code>.</li>
+                            <li><strong>Static:</strong> Retains the variable value between function calls and limits scope to the function.</li>
+                        </ul>
+                    </p>    
+                    <p><strong>4. Recursive function with syntax and example</strong></p>
+                    <p>A recursive function is a function that calls itself to solve a smaller instance of the same problem. It must have a base condition to stop the recursion.</p>
+                    <p><strong>Syntax:</strong></p>
+                    <pre>
+                    int factorial(int n) {
+                        if (n == 0)
+                            return 1;
+                        else
+                            return n * factorial(n - 1);
+                    }</pre>
+
+                    <p><strong>5. Demonstration of passing array to a function (code example)</strong></p>
+                    <p>Arrays can be passed to a function by specifying the array name without brackets. Here's an example of passing and processing an array:</p>
+                    <pre>
+                    
+                    void printArray(int, int);
+                    int main() {
+                        int numbers[] = {1, 2, 3, 4, 5};
+                        printArray(numbers, 5);
+                        return 0;
+                    }
+                    
+                    void printArray(int arr[], int size) {
+                        for (int i = 0; i < size; i++) {
+                            printf("%d ", arr[i]);
+                        }
+                    }
+                    </pre>
+                    <p><strong>6. Past Year Questions of Functions (2020-2024 and Model Questions) </strong></p>
+                </div>
+            </div>
+      <footer class="footer">
+        &copy; 2025 Class 12 Computer. All rights reserved.
+      </footer>
+    </page>
+  </body>
+</html>

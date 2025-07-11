@@ -25,6 +25,14 @@ li {
     text-align: left;
     font-size: 17px;
 }
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+img{
+    width: 700px;
+    height: 100px;
+}
 .head {
     padding: 1.5rem;
     background-color: #f9f9f9;
