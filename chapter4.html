@@ -19,10 +19,12 @@
                 <div class="rightcolumn">
 
                     <h2 class="title">Questions: </h2>
+                    
+                    <!-- FUNCTIONS SECTION -->
                     <p><strong>1. Working with a function</strong></p>
                     <ol type="a">
                         <li><strong>Define function:</strong> 
-                            <p>A function is a block of code designed to perform a particular task. It can be reused by calling it from different parts of a program.</p>
+                            <p>A function is a block of code designed to perform a particular task. It helps in modular programming, code reuse, and debugging.</p>
                         </li>
                         <li><strong>Syntax of functions:</strong>
                             <p>
@@ -30,65 +32,66 @@
                                 // body of function<br>
                             }</p>
                         </li>
+                        <li><strong>Purpose and Advantages:</strong>
+                            <ul>
+                                <li>Reduces code redundancy.</li>
+                                <li>Makes code more readable and maintainable.</li>
+                                <li>Encourages modular programming.</li>
+                                <li>Helps in debugging and testing.</li>
+                            </ul>
+                        </li>
                         <li><strong>Types of functions:</strong><br>
-                            <p><strong>Library functions:</strong> Built-in functions provided by C/C++ (e.g., printf(), sqrt()).<br>
+                            <p><strong>Library functions:</strong> Built-in functions provided by C (e.g., printf(), sqrt()).<br>
                             <strong>User-defined functions:</strong> Functions created by the programmer to perform specific tasks.</p>
                         </li>
                         <li><strong>Components of a function:</strong>
-                            <p>
-                                <ol type="i">
-                                    <li><strong>Function prototype:</strong> Declares the function signature before its use.</li>
-                                    <li><strong>Function call:</strong> Executes the function by calling it with arguments.</li>
-                                    <li><strong>Function definition:</strong> Contains the body of the function that defines its operations.</li>
-                                    <li><strong>Return type:</strong> Specifies the type of value the function returns.</li>
-                                </ol>
-                            </p>
+                            <ol type="i">
+                                <li><strong>Function prototype:</strong> Declares the function signature before its use.</li>
+                                <li><strong>Function call:</strong> Executes the function by calling it with arguments.</li>
+                                <li><strong>Function definition:</strong> Contains the body of the function that defines its operations.</li>
+                                <li><strong>Return type:</strong> Specifies the type of value the function returns.</li>
+                            </ol>
                         </li>
                     </ol>
 
                     <p><strong>2. Categories of function with example</strong></p>
-                    <p>
-                        <ol type="i">
-                            <li><strong>Function with return type but no arguments:</strong><br>
-                                Example:<br>
-                                int getValue() { return 10; }</li>
-                            <li><strong>Function with return type with arguments:</strong><br>
-                                Example:<br>
-                                int sum(int a, int b) { return a + b; }</li>
-                            <li><strong>Function with no return type with no arguments:</strong><br>
-                                Example:<br>
-                                void display() { printf("Hello"); }</li>
-                            <li><strong>Function with no return type with arguments:</strong><br>
-                                Example:<br>
-                                void show(int x) { printf("%d", x); }</li>
-                        </ol>
-                    </p>
+                    <ol type="i">
+                        <li><strong>Function with return type but no arguments:</strong><br>
+                            Example:<br>
+                            int getValue() { return 10; }</li>
+                        <li><strong>Function with return type with arguments:</strong><br>
+                            Example:<br>
+                            int sum(int a, int b) { return a + b; }</li>
+                        <li><strong>Function with no return type with no arguments:</strong><br>
+                            Example:<br>
+                            void display() { printf("Hello"); }</li>
+                        <li><strong>Function with no return type with arguments:</strong><br>
+                            Example:<br>
+                            void show(int x) { printf("%d", x); }</li>
+                    </ol>
 
                     <p><strong>3. Storage classes</strong></p>
-                    <p>
-                        <ul>
-                            <li><strong>Automatic:</strong> Default storage class for local variables. Lifetime is within the function.</li>
-                            <li><strong>External:</strong> Used for global variables accessible across multiple files using the <code>extern</code> keyword.</li>
-                            <li><strong>Register:</strong> Stores variables in CPU registers for faster access. Keyword: <code>register</code>.</li>
-                            <li><strong>Static:</strong> Retains the variable value between function calls and limits scope to the function.</li>
-                        </ul>
-                    </p>    
+                    <ul>
+                        <li><strong>Automatic:</strong> Default storage class for local variables. Lifetime is within the function.</li>
+                        <li><strong>External:</strong> Used for global variables accessible across multiple files using the <code>extern</code> keyword.</li>
+                        <li><strong>Register:</strong> Stores variables in CPU registers for faster access. Keyword: <code>register</code>.</li>
+                        <li><strong>Static:</strong> Retains the variable value between function calls and limits scope to the function.</li>
+                    </ul>   
+
                     <p><strong>4. Recursive function with syntax and example</strong></p>
-                    <p>A recursive function is a function that calls itself to solve a smaller instance of the same problem. It must have a base condition to stop the recursion.</p>
-                    <p><strong>Syntax:</strong></p>
+                    <p>A recursive function is a function that calls itself to solve a smaller instance of the same problem. It must have a base condition to stop the recursion. Common examples include factorial, Fibonacci sequence, and Tower of Hanoi.</p>
                     <pre>
                     int factorial(int n) {
                         if (n == 0)
                             return 1;
                         else
                             return n * factorial(n - 1);
-                    }</pre>
+                    }
+                    </pre>
 
                     <p><strong>5. Demonstration of passing array to a function (code example)</strong></p>
-                    <p>Arrays can be passed to a function by specifying the array name without brackets. Here's an example of passing and processing an array:</p>
                     <pre>
-                    
-                    void printArray(int, int);
+                    void printArray(int arr[], int size);
                     int main() {
                         int numbers[] = {1, 2, 3, 4, 5};
                         printArray(numbers, 5);
@@ -101,7 +104,204 @@
                         }
                     }
                     </pre>
-                    <p><strong>6. Past Year Questions of Functions (2020-2024 and Model Questions) </strong></p>
+
+                    <p><strong>6. Advantages and Disadvantages of Recursion</strong></p>
+                    <ul>
+                        <li><strong>Advantages:</strong> Simpler code for problems like factorial, Fibonacci, Tower of Hanoi.</li>
+                        <li><strong>Disadvantages:</strong> Consumes more memory, may cause stack overflow.</li>
+                    </ul>
+
+                    <!-- STRUCTURES & UNIONS -->
+                    <h2 class="title">Structures and Unions</h2>
+                    <p><strong>1. Structure Introduction and Syntax</strong></p>
+                    <p>A structure in C is a user-defined data type that groups different types of variables under one name. Useful for representing a record.</p>
+                    <pre>
+                    struct student {
+                        int id;
+                        char name[20];
+                        float marks;
+                    };
+                    </pre>
+
+                    <p><strong>2. Accessing Members of Structure</strong></p>
+                    <pre>
+                    struct student s1 = {1, "Ram", 85.5};
+                    printf("%d %s %.2f", s1.id, s1.name, s1.marks);
+                    </pre>
+
+                    <p><strong>3. Nested Structure Example</strong></p>
+                    <pre>
+                    struct address {
+                        char city[20];
+                        int zip;
+                    };
+                    struct student {
+                        int id;
+                        struct address addr;
+                    };
+                    </pre>
+
+                    <p><strong>4. Array of Structure Example</strong></p>
+                    <pre>
+                    struct student s[2] = {{1, "A", 90}, {2, "B", 80}};
+                    </pre>
+
+                    <p><strong>5. Passing Structure to Function</strong></p>
+                    <pre>
+                    void display(struct student s) {
+                        printf("%d %s %.2f", s.id, s.name, s.marks);
+                    }
+                    </pre>
+
+                    <p><strong>6. Union Introduction and Syntax</strong></p>
+                    <p>A union is similar to a structure but stores different data types in the same memory location, making it memory efficient.</p>
+                    <pre>
+                    union data {
+                        int i;
+                        float f;
+                        char c;
+                    };
+                    </pre>
+
+                    <p><strong>7. Difference Between Structure and Union</strong></p>
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Structure</th>
+                            <th>Union</th>
+                        </tr>
+                        <tr>
+                            <td>Memory Allocation</td>
+                            <td>Each member has separate memory space.</td>
+                            <td>All members share the same memory space.</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>Sum of all members' sizes.</td>
+                            <td>Size of the largest member.</td>
+                        </tr>
+                        <tr>
+                            <td>Access</td>
+                            <td>All members can be used at once.</td>
+                            <td>Only one member holds a value at a time.</td>
+                        </tr>
+                        <tr>
+                            <td>Use</td>
+                            <td>Suitable when all data is required.</td>
+                            <td>Suitable when only one data type is used at a time.</td>
+                        </tr>
+                    </table>
+
+                    <!-- POINTERS -->
+                    <h2 class="title">Pointers</h2>
+                    <p><strong>1. Introduction</strong></p>
+                    <p>A pointer is a variable that stores the address of another variable. They are powerful for dynamic memory allocation and function arguments.</p>
+
+                    <p><strong>2. Declaration and Initialization</strong></p>
+                    <pre>
+                    int a = 10;
+                    int *p = &a;
+                    </pre>
+
+                    <p><strong>3. Pointer and Function Example</strong></p>
+                    <pre>
+                    void change(int *x) {
+                        *x = 20;
+                    }
+                    </pre>
+
+                    <p><strong>4. Call by Reference Example</strong></p>
+                    <pre>
+                    int a = 10;
+                    change(&a);
+                    </pre>
+
+                    <p><strong>5. Pointer with Array Example</strong></p>
+                    <pre>
+                    int arr[3] = {10, 20, 30};
+                    int *p = arr;
+                    for (int i = 0; i < 3; i++)
+                        printf("%d ", *(p + i));
+                    </pre>
+
+                    <p><strong>6. Advantages and Disadvantages of Pointers</strong></p>
+                    <ul>
+                        <li><strong>Advantages:</strong> Dynamic memory allocation, faster execution, efficient handling of arrays/structures.</li>
+                        <li><strong>Disadvantages:</strong> Complex to understand, may cause memory leaks and dangling pointers.</li>
+                    </ul>
+
+                    <!-- FILE HANDLING -->
+                    <h2 class="title">File Handling</h2>
+                    <p><strong>1. Concept of Data File</strong></p>
+                    <p>Files are used to store data permanently on secondary storage devices. Unlike variables, data in files persists after program termination.</p>
+
+                    <p><strong>2. Need for File Handling</strong></p>
+                    <p>File handling allows programs to handle large data, store results permanently, and share data between programs.</p>
+
+                    <p><strong>3. File Types</strong></p>
+                    <ul>
+                        <li><strong>Sequential:</strong> Data accessed in order.</li>
+                        <li><strong>Random:</strong> Data accessed directly at any location.</li>
+                    </ul>
+
+                    <p><strong>4. File Handling Functions</strong></p>
+                    <ul>
+                        <li><code>fopen()</code> – Opens a file.</li>
+                        <li><code>fclose()</code> – Closes a file.</li>
+                        <li><code>getc()</code>, <code>putc()</code> – Read/write characters.</li>
+                        <li><code>fprintf()</code>, <code>fscanf()</code> – Read/write formatted data.</li>
+                        <li><code>getw()</code>, <code>putw()</code> – Read/write integers.</li>
+                        <li><code>fgets()</code>, <code>fputs()</code> – Read/write strings.</li>
+                        <li><code>fread()</code>, <code>fwrite()</code> – Block input/output.</li>
+                        <li><code>remove()</code>, <code>rename()</code> – Delete/rename file.</li>
+                    </ul>
+
+                    <p><strong>5. Random Access Functions</strong></p>
+                    <ul>
+                        <li><code>fseek(fp, offset, origin)</code> – Moves file pointer.</li>
+                        <li><code>rewind(fp)</code> – Moves pointer to beginning.</li>
+                        <li><code>ftell(fp)</code> – Returns current file position.</li>
+                    </ul>
+
+                    <p><strong>6. File Opening Modes</strong></p>
+                    <ul>
+                        <li><code>r</code>, <code>r+</code> – Read, read/update.</li>
+                        <li><code>w</code>, <code>w+</code> – Write, read/write (overwrite).</li>
+                        <li><code>a</code>, <code>a+</code> – Append, append/read.</li>
+                    </ul>
+
+                    <p><strong>7. Steps to Work with File</strong></p>
+                    <ol>
+                        <li>Define a file pointer.</li>
+                        <li>Open file in desired mode.</li>
+                        <li>Perform read/write/append operations.</li>
+                        <li>Close the file.</li>
+                    </ol>
+
+                    <p><strong>8. Example of File Handling</strong></p>
+                    <pre>
+                    FILE *fp;
+                    fp = fopen("data.txt", "w");
+                    fprintf(fp, "Hello World");
+                    fclose(fp);
+
+                    fp = fopen("data.txt", "r");
+                    char str[20];
+                    fgets(str, 20, fp);
+                    printf("%s", str);
+                    fclose(fp);
+                    </pre>
+
+                    <p><strong>9. End of File (EOF)</strong></p>
+                    <p><strong>Definition:</strong> EOF stands for <em>End of File</em>. It is a condition in C that indicates no more data can be read from a file. It is represented by a special constant <code>EOF</code>, typically having a value of -1. Functions like <code>getc()</code>, <code>fscanf()</code>, and <code>fread()</code> return <code>EOF</code> when the end of the file is reached or an error occurs.</p>
+                    <pre>
+                    while ((c = getc(fp)) != EOF) {
+                        printf("%c", c);
+                    }
+                    </pre>
+
+                    <p><strong>10. Past Year Questions of Functions, Structures, Pointers, File Handling (2020-2024 and Model Questions)</strong></p>
+
                 </div>
             </div>
       <footer class="footer">
